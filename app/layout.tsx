@@ -1,3 +1,5 @@
+import "./globals.css";
+
 export const metadata = {
   title: "Chat App",
   description: "Chat App"
