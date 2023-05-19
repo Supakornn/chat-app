@@ -14,6 +14,33 @@
   dependencies:
     regenerator-runtime "^0.13.11"
 
+"@cloudinary-util/url-loader@^3.5.1":
+  version "3.6.1"
+  resolved "https://registry.npmjs.org/@cloudinary-util/url-loader/-/url-loader-3.6.1.tgz"
+  integrity sha512-VxyJ1PhkDMhGay9Z8kdFlNwD13cGQdW+GoW0dj67FRHG5Csl9h6qeizPw/bWsDj9lBcRVZGBlLKEwDECXQAukg==
+  dependencies:
+    "@cloudinary-util/util" "2.0.1"
+    "@cloudinary/url-gen" "^1.8.7"
+
+"@cloudinary-util/util@^2.0.1", "@cloudinary-util/util@2.0.1":
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/@cloudinary-util/util/-/util-2.0.1.tgz"
+  integrity sha512-d2imgUjYTLjv8ZhZPMAts/uPbMvIE71X4I/5hwdY/7vM4BuFQoJMSyq+h2pW1z1MyGG9BOWBm70vp082lSrbEQ==
+
+"@cloudinary/transformation-builder-sdk@^1.2.7":
+  version "1.2.8"
+  resolved "https://registry.npmjs.org/@cloudinary/transformation-builder-sdk/-/transformation-builder-sdk-1.2.8.tgz"
+  integrity sha512-Rxvt/tjzTNzHDvH2l5ZLky/ahp60pHf51uLfzkFA/Mrh6Uj8aMHne0TRbYvpaH4t8l9wLGcdK6SbBqKVzlN16A==
+  dependencies:
+    "@cloudinary/url-gen" "^1.7.0"
+
+"@cloudinary/url-gen@^1.7.0", "@cloudinary/url-gen@^1.8.6", "@cloudinary/url-gen@^1.8.7":
+  version "1.10.0"
+  resolved "https://registry.npmjs.org/@cloudinary/url-gen/-/url-gen-1.10.0.tgz"
+  integrity sha512-J3V+gzT6Tepw9bMrR3prWVbW22cIFJtPS8Wkt1WFSZVHWpZx8/vv9ACHaxUmRqaSkjhX8ErsuzDY5YxdWnaCbw==
+  dependencies:
+    "@cloudinary/transformation-builder-sdk" "^1.2.7"
+
 "@eslint-community/eslint-utils@^4.2.0":
   version "4.4.0"
   resolved "https://registry.npmjs.org/@eslint-community/eslint-utils/-/eslint-utils-4.4.0.tgz"
@@ -2006,6 +2033,15 @@ next-auth@^4, next-auth@^4.22.1:
     preact-render-to-string "^5.1.19"
     uuid "^8.3.2"
 
+next-cloudinary@^4.10.1:
+  version "4.10.1"
+  resolved "https://registry.npmjs.org/next-cloudinary/-/next-cloudinary-4.10.1.tgz"
+  integrity sha512-rMJH7ILj478xkjCFQLOfL3cvGJLUkmmjRIZORTK6hCBgXKvX7yZtUPbJd0cnwIzwL4V5ur1g9ZLG8xh8deR26Q==
+  dependencies:
+    "@cloudinary-util/url-loader" "^3.5.1"
+    "@cloudinary-util/util" "^2.0.1"
+    "@cloudinary/url-gen" "^1.8.6"
+
 next-superjson-plugin@^0.5.7:
   version "0.5.7"
   resolved "https://registry.npmjs.org/next-superjson-plugin/-/next-superjson-plugin-0.5.7.tgz"
@@ -2013,7 +2049,7 @@ next-superjson-plugin@^0.5.7:
   dependencies:
     hoist-non-react-statics "^3.3.2"
 
-"next@^12.2.5 || ^13", next@^13, next@13.4.1:
+"next@^12 || ^13", "next@^12.2.5 || ^13", next@^13, next@13.4.1:
   version "13.4.1"
   resolved "https://registry.npmjs.org/next/-/next-13.4.1.tgz"
   integrity sha512-JBw2kAIyhKDpjhEWvNVoFeIzNp9xNxg8wrthDOtMctfn3EpqGCmW0FSviNyGgOSOSn6zDaX48pmvbdf6X2W9xA==
@@ -2451,7 +2487,7 @@ react-is@^16.13.1, react-is@^16.7.0:
   resolved "https://registry.npmjs.org/react-is/-/react-is-16.13.1.tgz"
   integrity sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==
 
-react@*, "react@^16.8.0 || ^17 || ^18", "react@^17.0.2 || ^18", react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16, react@18.2.0:
+react@*, "react@^16.8.0 || ^17 || ^18", "react@^17 || ^18", "react@^17.0.2 || ^18", react@^18.2.0, "react@>= 16.8.0 || 17.x.x || ^18.0.0-0", react@>=16, react@18.2.0:
   version "18.2.0"
   resolved "https://registry.npmjs.org/react/-/react-18.2.0.tgz"
   integrity sha512-/3IjMdb2L9QbBdWiW5e3P2/npwMBaU9mHCSCUzNln0ZCYbcfTsGbTJrU/kGemdH2IWmB2ioZ+zkxtmq6g09fGQ==
